@@ -27,7 +27,7 @@ open class SplitRowCell<L: RowType, R: RowType>: Cell<SplitRowValue<L.Cell.Value
 		
 		self.tableViewRight = SplitRowCellTableView()
 		tableViewRight.separatorStyle = .none
-		tableViewRight.leftSeparatorStyle = .singleLine
+		tableViewRight.leftSeparatorStyle = .none
 		tableViewRight.translatesAutoresizingMaskIntoConstraints = false
 		
 		contentView.addSubview(tableViewLeft)
