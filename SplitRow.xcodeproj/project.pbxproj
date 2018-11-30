@@ -28,6 +28,10 @@
 		79B5CB451FD4767600983E52 /* SplitRowValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CB411FD4767500983E52 /* SplitRowValue.swift */; };
 		79B5CB461FD4767600983E52 /* SplitRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CB421FD4767500983E52 /* SplitRowCell.swift */; };
 		79B5CB471FD4767600983E52 /* SplitRowCellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CB431FD4767500983E52 /* SplitRowCellTableView.swift */; };
+		BAD6882C21B1C949006FB905 /* SplitTriRowValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6882B21B1C949006FB905 /* SplitTriRowValue.swift */; };
+		BAD6882E21B1C952006FB905 /* SplitTriRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6882D21B1C952006FB905 /* SplitTriRow.swift */; };
+		BAD6883021B1C98A006FB905 /* SplitTriRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6882F21B1C98A006FB905 /* SplitTriRowCell.swift */; };
+		BAD6883221B1C9C3006FB905 /* SplitTriRowCellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6883121B1C9C3006FB905 /* SplitTriRowCellTableView.swift */; };
 		BDC9F92D66E1A76152FD65CC /* Pods_SplitRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83D0DD68492E96639AB3F99 /* Pods_SplitRow.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +83,10 @@
 		A68F61C8CF74838A0D7640A4 /* Pods__CP__SplitRow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__CP__SplitRow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7966D658B0381D7985F87C5 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83D0DD68492E96639AB3F99 /* Pods_SplitRow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitRow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD6882B21B1C949006FB905 /* SplitTriRowValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTriRowValue.swift; sourceTree = "<group>"; };
+		BAD6882D21B1C952006FB905 /* SplitTriRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTriRow.swift; sourceTree = "<group>"; };
+		BAD6882F21B1C98A006FB905 /* SplitTriRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTriRowCell.swift; sourceTree = "<group>"; };
+		BAD6883121B1C9C3006FB905 /* SplitTriRowCellTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTriRowCellTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +184,10 @@
 				79B5CB421FD4767500983E52 /* SplitRowCell.swift */,
 				79B5CB431FD4767500983E52 /* SplitRowCellTableView.swift */,
 				79B5CB411FD4767500983E52 /* SplitRowValue.swift */,
+				BAD6882D21B1C952006FB905 /* SplitTriRow.swift */,
+				BAD6882F21B1C98A006FB905 /* SplitTriRowCell.swift */,
+				BAD6883121B1C9C3006FB905 /* SplitTriRowCellTableView.swift */,
+				BAD6882B21B1C949006FB905 /* SplitTriRowValue.swift */,
 				79B5CB291FD4756500983E52 /* SplitRow.h */,
 				79B5CB2A1FD4756500983E52 /* Info.plist */,
 			);
@@ -528,10 +540,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD6883021B1C98A006FB905 /* SplitTriRowCell.swift in Sources */,
 				79B5CB451FD4767600983E52 /* SplitRowValue.swift in Sources */,
 				79B5CB471FD4767600983E52 /* SplitRowCellTableView.swift in Sources */,
 				79B5CB461FD4767600983E52 /* SplitRowCell.swift in Sources */,
+				BAD6882E21B1C952006FB905 /* SplitTriRow.swift in Sources */,
 				79B5CB441FD4767600983E52 /* SplitRow.swift in Sources */,
+				BAD6882C21B1C949006FB905 /* SplitTriRowValue.swift in Sources */,
+				BAD6883221B1C9C3006FB905 /* SplitTriRowCellTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
