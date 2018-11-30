@@ -96,6 +96,7 @@ open class SplitTriRowCell<L: RowType, C: RowType, R: RowType>: Cell<SplitTriRow
         
         self.contentView.addConstraint(NSLayoutConstraint(item: tableViewLeft, attribute: .width, relatedBy: .equal, toItem: contentView, attribute: .width, multiplier: row.rowLeftPercentage, constant: -5.0))
         self.contentView.addConstraint(NSLayoutConstraint(item: tableViewCenter, attribute: .width, relatedBy: .equal, toItem: contentView, attribute: .width, multiplier: row.rowCenterPercentage, constant: -5.0))
+        self.contentView.addConstraint(NSLayoutConstraint(item: tableViewCenter, attribute: .centerX, relatedBy: .equal, toItem: contentView, attribute: .centerX, multiplier: 1.0, constant: 0.0))
         self.contentView.addConstraint(NSLayoutConstraint(item: tableViewRight, attribute: .width, relatedBy: .equal, toItem: contentView, attribute: .width, multiplier: row.rowRightPercentage, constant: -5.0))
     }
     
