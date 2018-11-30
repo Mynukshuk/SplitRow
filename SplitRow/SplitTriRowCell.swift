@@ -14,7 +14,7 @@ open class SplitTriRowCell<L: RowType, C: RowType, R: RowType>: Cell<SplitTriRow
     var tableViewRight: SplitTriRowCellTableView<R>!
     
     open override var isHighlighted: Bool {
-        get { return super.isHighlighted || (tableViewLeft.row?.cell?.isHighlighted ?? false) || (tableViewRight.row?.cell?.isHighlighted ?? false) }
+        get { return super.isHighlighted || (tableViewLeft.row?.cell?.isHighlighted ?? false) || (tableViewCenter.row?.cell?.isHighlighted ?? false) || (tableViewRight.row?.cell?.isHighlighted ?? false) }
         set { super.isHighlighted = newValue }
     }
     
@@ -124,7 +124,7 @@ open class SplitTriRowCell<L: RowType, C: RowType, R: RowType>: Cell<SplitTriRow
         let rowRightFirstResponder = row.rowRight?.cell?.findFirstResponder()
         
         if rowLeftFirstResponder == nil && rowCenterFirstResponder == nil && rowRightFirstResponder == nil{
-            return rowCanBecomeFirstResponder(row.rowLeft) || rowCanBecomeFirstResponder(row.rowRight)
+            return rowCanBecomeFirstResponder(row.rowLeft) || rowCanBecomeFirstResponder(row.rowCenter) || rowCanBecomeFirstResponder(row.rowRight)
             
         } else if rowLeftFirstResponder == nil{
             return rowCanBecomeFirstResponder(row.rowLeft)
